@@ -1,68 +1,97 @@
-# CodeIgniter 4 Application Starter
+📋 PROTAASIA — Sistem Informasi Pengelolaan Proyek dan Tugas Mahasiswa
 
-## What is CodeIgniter?
+PROTASIA adalah aplikasi berbasis web yang dibangun menggunakan CodeIgniter 4 dan Bootstrap, ditujukan untuk membantu dosen dan mahasiswa dalam mengelola proyek kolaboratif, tugas, dan evaluasi secara sistematis.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+*NOTE*
+Project ini masih belum 100% sempurna, project ini hasil dari sata belajar Framework Codeigniter 4
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+📌 Fitur Utama
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+🧑‍🏫 Dosen
+- Membuat dan mengelola proyek
+- Menambahkan tugas dan deadline
+- Mengunggah file tugas
+- Melihat daftar mahasiswa dalam proyek
+- Memberi nilai dan catatan evaluasi
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+🎓 Mahasiswa
+- Melihat dan bergabung ke proyek
+- Mengerjakan dan mengunggah tugas
+- Melihat nilai dan progres
+- Mendapatkan notifikasi deadline (H-1 s/d H-7)
 
-## Installation & updates
+🛠️ Admin
+- Kelola akun dosen dan mahasiswa (CRUD)
+- Monitoring seluruh proyek & tugas
+- Laporan PDF/Excel rekap aktivitas
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+🗂️ Struktur Folder
+app/
+├── Controllers/
+├── Models/
+├── Views/
+│   ├── dashboard/
+│   ├── auth/
+│   ├── admin/
+│   └── layout/
+public/
+writable/
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+⚙️ Teknologi yang Digunakan
+CodeIgniter 4
+Bootstrap 3/4
+MySQL/MariaDB
+Dompdf
+PhpSpreadsheet
+SweetAlert
 
-## Setup
+🚀 Cara Install (Localhost)
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+1. Clone repo:
+    git clone https://github.com/itsmeandra/Sistem-Informasi-Pengelolaan-Proyek-dan-Tugas-Mahasiswa.git
+    cd siprotama
 
-## Important Change with index.php
+2. Setting environment:
+    - Salin .env.example jadi .env
+    - Atur konfigurasi DB:
+        database.default.hostname = localhost
+        database.default.database = protasia_db
+        database.default.username = root
+        database.default.password =
+        database.default.DBDriver = MySQLi
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+3. Import database:
+    - Import file SQL (tersedia di /database/siprotama.sql)
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+4. Jalankan server:
+    - php spark serve
+    - Akses di browser: http://localhost:8080
 
-**Please** read the user guide for a better explanation of how CI4 works!
+🔪 Akun Dummy
 
-## Repository Management
+  Role          Username          Password
+  Admin         admin             admin
+  Dosen         12211221          dosen
+  Mahasiswa     11223344          mhs
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+📝 Struktur Database
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+Tabel utama:
+- users (admin, dosen, mahasiswa)
+- projects (proyek kolaborasi)
+- project_members (relasi mahasiswa–proyek)
+- tasks (tugas yang diberikan dosen)
+- submissions (pengumpulan tugas oleh mahasiswa)
 
-## Server Requirements
+📊 Fitur Laporan
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+- Export seluruh proyek & tugas ke PDF
+- Export tugas & progres ke Excel
+- Dapat diakses via menu Admin > Laporan
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+🙋‍♂️ Kontribusi
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+Pull request sangat terbuka. Silakan fork repo, buat fitur/bugfix, lalu ajukan PR. Gunakan branch sesuai fitur (feature/nama-fitur) dan sertakan deskripsi yang jelas.
 
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+📄 Lisensi
+MIT License — bebas digunakan, disesuaikan, dan dikembangkan kembali.
