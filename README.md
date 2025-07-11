@@ -25,18 +25,6 @@ Project ini masih belum 100% sempurna, project ini hasil dari sata belajar Frame
 - Monitoring seluruh proyek & tugas
 - Laporan PDF/Excel rekap aktivitas
 
-🗂️ Struktur Folder
-app/
-├── Controllers/
-├── Models/
-├── Views/
-│   ├── dashboard/
-│   ├── auth/
-│   ├── admin/
-│   └── layout/
-public/
-writable/
-
 ⚙️ Teknologi yang Digunakan
 CodeIgniter 4
 Bootstrap 3/4
