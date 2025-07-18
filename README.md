@@ -1,4 +1,4 @@
-📋 PROTAASIA — Sistem Informasi Pengelolaan Proyek dan Tugas Mahasiswa
+📋 PROTASIA — Sistem Informasi Pengelolaan Proyek dan Tugas Mahasiswa
 
 PROTASIA adalah aplikasi berbasis web yang dibangun menggunakan CodeIgniter 4 dan Bootstrap, ditujukan untuk membantu dosen dan mahasiswa dalam mengelola proyek kolaboratif, tugas, dan evaluasi secara sistematis.
 
@@ -37,7 +37,7 @@ SweetAlert
 
 1. Clone repo:
     git clone https://github.com/itsmeandra/Sistem-Informasi-Pengelolaan-Proyek-dan-Tugas-Mahasiswa.git
-    cd siprotama
+    cd protasia
 
 2. Setting environment:
     - Salin .env.example jadi .env
