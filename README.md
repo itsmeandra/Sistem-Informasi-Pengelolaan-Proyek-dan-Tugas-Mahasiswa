@@ -26,20 +26,20 @@ Project ini masih belum 100% sempurna, project ini hasil dari sata belajar Frame
 - Laporan PDF/Excel rekap aktivitas
 
 ⚙️ Teknologi yang Digunakan
-CodeIgniter 4
-Bootstrap 3/4
-MySQL/MariaDB
-Dompdf
-PhpSpreadsheet
+CodeIgniter 4, 
+Bootstrap 3/4, 
+MySQL/MariaDB, 
+Dompdf, 
+PhpSpreadsheet, 
 SweetAlert
 
 🚀 Cara Install (Localhost)
 
 1. Clone repo:
-    git clone https://github.com/itsmeandra/Sistem-Informasi-Pengelolaan-Proyek-dan-Tugas-Mahasiswa.git
-    cd protasia
+   git clone https://github.com/itsmeandra/Sistem-Informasi-Pengelolaan-Proyek-dan-Tugas-Mahasiswa.git
+   cd protasia
 
-2. Setting environment:
+3. Setting environment:
     - Salin .env.example jadi .env
     - Atur konfigurasi DB:
         database.default.hostname = localhost
@@ -48,10 +48,10 @@ SweetAlert
         database.default.password =
         database.default.DBDriver = MySQLi
 
-3. Import database:
+4. Import database:
     - Import file SQL (tersedia di /database/siprotama.sql)
 
-4. Jalankan server:
+5. Jalankan server:
     - php spark serve
     - Akses di browser: http://localhost:8080
 
