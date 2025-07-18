@@ -36,8 +36,8 @@ SweetAlert
 🚀 Cara Install (Localhost)
 
 1. Clone repo:
-   git clone https://github.com/itsmeandra/Sistem-Informasi-Pengelolaan-Proyek-dan-Tugas-Mahasiswa.git
-   cd protasia
+   - git clone https://github.com/itsmeandra/Sistem-Informasi-Pengelolaan-Proyek-dan-Tugas-Mahasiswa.git
+   - cd protasia
 
 3. Setting environment:
     - Salin .env.example jadi .env
