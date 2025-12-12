@@ -3,7 +3,7 @@
 PROTASIA adalah aplikasi berbasis web yang dibangun menggunakan CodeIgniter 4 dan Bootstrap, ditujukan untuk membantu dosen dan mahasiswa dalam mengelola proyek kolaboratif, tugas, dan evaluasi secara sistematis.
 
 *NOTE*
-Project ini masih belum 100% sempurna, project ini hasil dari sata belajar Framework Codeigniter 4
+Project ini masih belum 100% sempurna, project ini hasil dari saya belajar Framework Codeigniter 4
 
 📌 Fitur Utama
 
@@ -33,35 +33,38 @@ Dompdf,
 PhpSpreadsheet, 
 SweetAlert
 
-🚀 Cara Install (Localhost)
-
+🚀 Cara Install
 1. Clone repo:
-   - git clone https://github.com/itsmeandra/Sistem-Informasi-Pengelolaan-Proyek-dan-Tugas-Mahasiswa.git
-   - cd protasia
-
-3. Setting environment:
-    - Salin .env.example jadi .env
-    - Atur konfigurasi DB:
-        database.default.hostname = localhost
-        database.default.database = protasia_db
-        database.default.username = root
-        database.default.password =
-        database.default.DBDriver = MySQLi
+```
+git clone https://github.com/itsmeandra/Sistem-Informasi-Pengelolaan-Proyek-dan-Tugas-Mahasiswa.git
+cd protasia
+```
+2. Setting environment:
+   - Salin .env.example jadi .env
+   - Atur konfigurasi DB:
+```
+database.default.hostname = localhost
+database.default.database = protasia_db
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+```
 
 4. Import database:
-    - Import file SQL (tersedia di /database/siprotama.sql)
+   - Import file SQL (tersedia di /database/siprotama.sql)
 
 5. Jalankan server:
-    - php spark serve
-    - Akses di browser: http://localhost:8080
-
-🔪 Akun Dummy
-
+```
+   - php spark serve
+   - Akses di browser: http://localhost:8080
+```
+Akun Dummy
+```
   Role          Username          Password
   Admin         admin             admin
   Dosen         12211221          dosen
   Mahasiswa     11223344          mhs
-
+```
 📝 Struktur Database
 
 Tabel utama:
